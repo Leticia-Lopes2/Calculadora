@@ -1,0 +1,154 @@
+:root{
+  --main-color: #1deff2;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+ 
+}
+
+body{
+  text-align: center;
+  width: 300px;
+  padding: 8%;
+  height: -210vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: center;
+  background-color: white;
+   color: var(--main-color);
+}
+
+.Calcular{
+  width: 306px;
+  padding: 20px 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1),
+    -2px -2px 5px rgba(0, 0, 0, 0.1)
+}
+
+.Resultado{
+  border: solid 2px var(--main-color);
+  height: 58px;
+  border-radius: 1px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.Resultado input{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 50px;
+  text-align: end;
+  padding-right: 10px;
+  color: var(--main-color);
+}
+
+.Resultado input::placeholder{
+  color: var(--main-color);
+  
+}
+
+.btn{
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  gap: 15px 15px;
+}
+
+.btn button{
+  border: none;
+  outline: none;
+  height: 60px;
+  border-radius: 9%;
+  font-size: 25px;
+  color: var(--main-color);
+  background-color: #fff;
+}
+
+.btn button.lm{
+  background-color: var(--main-color);
+  color: white;
+}
+
+.btn button.igual{
+  width: 138px;
+  border-radius: 9px;
+}
+
+.appmenu{
+  position: absolute;
+  top: 10px;
+  left: 8px;
+
+}
+
+.icone{
+  display: flex;
+  flex-direction: column;
+  width: 30px;
+  gap: 8px;
+  margin-bottom: 20px;
+  transition: 0.5s;
+}
+
+.icone span{
+  background-color: var(--main-color);
+  height: 5px;
+  width: 100%;
+  border-radius: 90px;
+  transition: 0.9s;
+}
+
+.menu{
+  padding: 8px;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  gap: 6px;
+  transform: scale(0);
+  transform-origin: top left;
+  transition: 0.2s;
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
+}
+.menu.abrir{
+  transform: scale(1);
+}
+
+.menu div{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: solid 2px #818181;
+}
+/*Temas cores*/
+.menu div:nth-child(1){
+  background-color: #0fcbd9;
+}
+
+.menu div:nth-child(2){
+  background-color: #DF8F12;
+}
+
+.menu div:nth-child(3){
+  background-color: #f514bc;
+}
+
+body.cyan{
+  --main-color: #1deff2; 
+}
+
+body.orange{
+  --main-color: #DF8F12;
+}
+
+body.pink{
+  --main-color: #f514bc;
+}
+.lm:hover{
+  font-size: 40px;
+  text-shadow: 0px 0px 8px rgba(6, 85, 85, 9.815);
+}
